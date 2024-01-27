@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let numeroDeElementos = 5;
+   
+    //Función para generar la serie Fibonacci
+    function generarFibonacci(numElementos) {
+    let serie = [0, 1]; // Inicializa la serie con los dos primeros elementos
+
+  // Genera la serie hasta el número de elementos deseado
+    for (let i = 2; i < numElementos; i++) {
+        let nuevoElemento = serie[i - 1] + serie[i - 2];
+        serie.push(nuevoElemento);
+     }
+
+    return serie;
+    }   
+
+    // Llama a la función y almacenar el resultado en una variable
+    let resultado = generarFibonacci(numeroDeElementos);
+
+    console.log(resultado);
+   </script> 
+</body>
+</html>
